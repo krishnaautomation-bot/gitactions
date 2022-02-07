@@ -33,4 +33,8 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
            name: my-artifact
-           path: temp      
+           path: temp
+    - name: Sleep for 30 seconds
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '2m      
