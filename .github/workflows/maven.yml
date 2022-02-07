@@ -10,14 +10,6 @@ on:
         description: 'Environment'
         required: true
         default: qa
-      environment2:
-        description: 'Environment'
-        required: true
-        default: qa
-      environment3:
-        description: 'Environment'
-        required: true
-        default: qa
 
 jobs:
   build:
@@ -33,8 +25,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn verify -Dtest.deployment=${{ github.event.inputs.environment1 }}
-    - name: Build with Maven
-      run: mvn verify -Dtest.deployment=${{ github.event.inputs.environment2 }}
-    - name: Build with Maven
-      run: mvn verify -Dtest.deployment=${{ github.event.inputs.environment3 }}      
+      run: mvn verify -Dtest.deployment=${{ github.event.inputs.environment1 }} 
