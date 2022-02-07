@@ -28,6 +28,5 @@ jobs:
       run: mvn verify -Dtest.deployment=${{ github.event.inputs.environment1 }}
     - name: step 2 - Add artifacts to publish to the temp folder
       run: |
-          ls
           cd temp
           ls
