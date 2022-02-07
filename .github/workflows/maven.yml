@@ -34,7 +34,7 @@ jobs:
       with:
            name: my-artifact
            path: temp
-    - name: Sleep for 30 seconds
+    - name: Sleep for 2 minutes
       uses: jakejarvis/wait-action@master
       with:
         time: '2m'      
