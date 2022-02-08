@@ -28,6 +28,7 @@ jobs:
       run: mvn verify -Dcucumber.filter.tags=@BeforeMigration
     - name: step 2 - Add artifacts to publish to the temp folder
       run: |
+          ls
           cd temp
           ls   
     - uses: actions/upload-artifact@v2
