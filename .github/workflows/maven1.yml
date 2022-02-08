@@ -28,4 +28,6 @@ jobs:
        workflow: maven.yml
     - name: print all files
       run: |
-          ls   
+          ls
+          cd my-artifact
+          ls
