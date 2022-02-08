@@ -34,7 +34,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
            name: my-artifact
-           path: /*.json
+           path: beforemigration.json
     - name: get response using API
       run: |
           curl \
