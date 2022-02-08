@@ -22,7 +22,7 @@ jobs:
           curl \
           -H "Accept: application/vnd.github.v3+json" \
           https://api.github.com/repos/krishnaautomation-bot/gitactions/actions/artifacts
-    - name: Sleep for 2 minutes
-      uses: jakejarvis/wait-action@master
+    - name: Download artifact
+      uses: dawidd6/action-download-artifact@v2
       with:
-        time: '2m'      
+       workflow: maven.yml
