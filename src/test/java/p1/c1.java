@@ -17,7 +17,7 @@ public class c1 {
 		
 		TestData testdata = new TestData();
 		System.out.println(testdata.properties.getProperty("deployment"));
-		FileWriter file = new FileWriter("temp/"+RandomStringUtils.randomAlphanumeric(10)+".json");
+		FileWriter file = new FileWriter("beforemigration.json");
 		file.write("asdfasdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdf");
 		file.flush();
 		file.close();
