@@ -31,3 +31,7 @@ jobs:
           ls
           cd my-artifact
           ls
+    - name: Build with Maven
+      run: mvn verify -Dcucumber.filter.tags=@AfterMigration  
+    - name: Build with Maven
+      run: mvn verify -Dcucumber.filter.tags=@validatebothjsonfiles  
