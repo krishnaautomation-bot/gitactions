@@ -18,7 +18,35 @@ public class Stepdefs {
 	
 	@Given("I want to write a step before migration")
 	public void i_want_to_write_a_step_before_migration() throws IOException {
-		FileWriter file = new FileWriter("temp/beforemigration.json");
+		FileWriter file = new FileWriter("temp/beforemigration1.json");
+		file.write("asdfasdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdf");
+		file.flush();
+		file.close();
+		FileWriter file = new FileWriter("temp/beforemigration1.json");
+		file.write("asdfasdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdf");
+		file.flush();
+		file.close();
+		FileWriter file = new FileWriter("temp/beforemigration2.json");
+		file.write("asdfasdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdf");
+		file.flush();
+		file.close();
+		FileWriter file = new FileWriter("temp/beforemigration3.json");
+		file.write("asdfasdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdf");
+		file.flush();
+		file.close();
+		FileWriter file = new FileWriter("temp/beforemigration4.json");
+		file.write("asdfasdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdf");
+		file.flush();
+		file.close();
+		FileWriter file = new FileWriter("temp/beforemigration5.json");
+		file.write("asdfasdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdf");
+		file.flush();
+		file.close();
+		FileWriter file = new FileWriter("temp/beforemigration6.json");
+		file.write("asdfasdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdf");
+		file.flush();
+		file.close();
+		FileWriter file = new FileWriter("temp/beforemigration7.json");
 		file.write("asdfasdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdf");
 		file.flush();
 		file.close();
