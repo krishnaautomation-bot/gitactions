@@ -26,3 +26,6 @@ jobs:
       uses: dawidd6/action-download-artifact@v2
       with:
        workflow: maven.yml
+    - name: print all files
+      run: |
+          ls   
