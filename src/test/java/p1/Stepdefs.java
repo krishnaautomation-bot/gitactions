@@ -18,7 +18,7 @@ public class Stepdefs {
 	
 	@Given("I want to write a step before migration")
 	public void i_want_to_write_a_step_before_migration() throws IOException {
-		FileWriter file = new FileWriter("beforemigration.json");
+		FileWriter file = new FileWriter("temp/beforemigration.json");
 		file.write("asdfasdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdf");
 		file.flush();
 		file.close();
@@ -26,7 +26,7 @@ public class Stepdefs {
 	
 	@Given("I want to write a step after migration")
 	public void i_want_to_write_a_step_after_migration() throws IOException {
-		FileWriter file = new FileWriter("aftermigration.json");
+		FileWriter file = new FileWriter("temp/aftermigration.json");
 		file.write("asdfasdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdfasdf asdfasdfasdfasdfasdfasdf");
 		file.flush();
 		file.close();
@@ -37,7 +37,7 @@ public class Stepdefs {
 		File dir = new File(".");
 		FileFilter fileFilter = new WildcardFileFilter("*.json");
 		File[] files = dir.listFiles(fileFilter);
-		String aftermigrationjson = FileUtils.readFileToString(files[0]);
+		String aftermigrationjson = FileUtils.readFileToString(files[1]);
 
 		
 		File file1 = new File("beforemigration.json");
